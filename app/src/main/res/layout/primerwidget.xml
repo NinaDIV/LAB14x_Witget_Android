@@ -1,19 +1,33 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     style="@style/Widget.LAB14x.AppWidget.Container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:theme="@style/Theme.LAB14x.AppWidgetContainer">
 
-    <TextView
-        android:id="@+id/appwidget_text"
-        style="@style/Widget.LAB14x.AppWidget.InnerView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_margin="8dp"
-        android:contentDescription="@string/appwidget_text"
-        android:text="@string/appwidget_text"
-        android:textSize="24sp"
-        android:textStyle="bold|italic" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/widget_text"
+            android:layout_width="96dp"
+            android:layout_height="42dp"
+            android:rotationX="2"
+            android:rotationY="8"
+            android:text="HOLA"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/widget_button"
+            android:layout_width="264dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#A5D993"
+            android:text="Actualizar"
+            android:visibility="visible"
+            tools:visibility="visible" />
+    </LinearLayout>
+
 </RelativeLayout>
