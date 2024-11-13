@@ -23,7 +23,6 @@ import com.example.lab14x.MainActivity
 class SimpleWidgetContent : GlanceAppWidget() {
 
     override suspend fun provideGlance(context: Context, id: GlanceId) {
-
         provideContent {
             GlanceTheme {
                 MyContent()
@@ -45,9 +44,13 @@ class SimpleWidgetContent : GlanceAppWidget() {
                     text = "Página Principal",
                     onClick = actionStartActivity<MainActivity>()
                 )
-
+                Button(
+                    text = "Segunda Pantalla",
+                    onClick = actionStartActivity<SecondActivity>()
+                )
             }
         }
     }
 }
+
 

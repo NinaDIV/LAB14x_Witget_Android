@@ -24,11 +24,15 @@ class MainActivity : ComponentActivity() {
                         name = "Android" ,
                         modifier = Modifier.padding(innerPadding)
                     )
+
                 }
             }
         }
     }
 }
+
+
+
 
 @Composable
 fun Greeting(name: String , modifier: Modifier = Modifier) {

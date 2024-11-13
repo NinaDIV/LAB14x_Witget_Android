@@ -48,6 +48,12 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".witget_Glance.SecondActivity"
+            android:exported="true"
+            android:label="Second Screen"
+            android:theme="@style/Theme.LAB14x" />
+
 
     </application>
 
